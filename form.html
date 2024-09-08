@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            background-color: rgb(54, 50, 54);
+            color: rgb(255, 230, 0);
+        }
+        p{
+            font-size: 50px;
+        }
+        input {
+             background-color: rgb(219, 218, 218);s
+        }
+    </style>
+</head>
+<body>
+    <p>Sign up</p>
+    <form
+    action="back_end.php"
+    target="_blank"
+    method="get"
+    autocomplete="on"
+    novalidate>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname">
+    <br><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname">
+    <br><br><br>
+    Gender:
+    <input type="radio" id="male" name="gen" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gen" value="female">
+    <label for="female">Female</label>
+    <br><br><br>
+    <label for="email">Email address:</label>
+    <input type="text" id="email" name="email" placeholder="exmp@email.com">
+    <br><br><br>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <br><br><br>
+    <label for="pass">Password:</label>
+    <input type="password" id="pass" name="pass">
+    <br><br><br>
+    <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
